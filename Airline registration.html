@@ -1,0 +1,64 @@
+<form #form="ngForm"(ngSubmit)="onSubmit(form)" class="from-inline">
+    <div class="border border-dark p-3">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="col text-center p-2 mb-3 bg-light">
+        <div class="navbar-header">
+            <a class="navbar-brand" herf='#'>Customer Details</a>
+        </div>
+       </div> 
+     </div>
+    </nav>
+    <div class="row"> 
+        <div class="col mb-3">
+            <label for="Title" class="form-label"><u>TITLE</u></label>
+                 <select input type="text"  name="Title" #Title="ngModel" ngModel>
+                     <option value="Mr">Mr</option>
+                     <option value="Miss">Miss</option>
+                     <option value="Mrs">Mrs</option>                    
+                </select>           
+             </div>
+          <div class="col mb-3">
+            <label for="FirstName" class="form-label"><u>FIRST NAME</u></label>
+            <input type="text" class="form-control" name="FirstName" #Firstname="ngModel" ngModel>
+        </div>   
+    </div>   
+    <div class="row">
+        <div class="col mb-3">
+            <label for="LastName" class="form-label"><u>LAST NAME</u></label>
+            <input type="text" class="form-control" name="LastName" #Lastname="ngModel" ngModel>
+        </div>
+        <div class="col mb-3">
+            <label for="email" class="form-label"><u>EMAIL ID</u></label>
+            <input type="email" class="form-control" name="email" #Email="ngModel" ngModel>
+        </div>   
+    </div> 
+    <div class="row">
+        <div class="col mb-3">
+            <label for="Password" class="form-label"><u>PASSWORD</u></label>            
+            <input type="text" class="form-control" name="Password" #Password="ngModel" ngModel>
+        </div>
+        <div class="col mb-3">
+             <label for="ConfirmPassword" class="form-label"><u>CONFIRM PASSWORD</u></label>
+             <input type="password" class="form-control" name="ConfirmPassword" #ConfirmPassword="ngModel" ngModel>
+        </div>   
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="DateOfBirth" class="form-label"><u>DATE OF BIRTH</u></label>
+            <input type="date" class="form-control" name="DateOfBirth" #DateOfBirth="ngModel" ngModel>
+        </div>
+        <div class="col mb-3">
+             <label for="PhoneNumber" class="form-label" ><u>PHONE NUMBER</u></label>
+             <input type="text" class="form-control" name="PhoneNumber"#PhoneNumber="ngModel" ngModel>
+        </div>   
+    </div>
+        <div class="form-group">
+            <div class="col-md-4">          
+                <a href=""></a>
+            <button type="submit" class="btn btn-primary" style="margin-left:45px">SIGN UP</button>
+            <button type="cancel" class="btn btn-primary" style="margin-left:10px">CANCEL</button>
+       </div>
+    </div> 
+    </div>
+</form> 
